@@ -1,6 +1,6 @@
 import torch
 pretrained_weights = torch.load('mask_rcnn_swin_tiny_patch4_window7_1x.pth')
-num_class = 21
+num_class = 2
 pretrained_weights['state_dict']['roi_head.bbox_head.fc_cls.weight'].resize_(num_class+1,1024)
 pretrained_weights['state_dict']['roi_head.bbox_head.fc_cls.bias'].resize_(num_class+1)
 pretrained_weights['state_dict']['roi_head.bbox_head.fc_reg.weight'].resize_(num_class*4,1024)

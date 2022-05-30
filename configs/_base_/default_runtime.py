@@ -11,6 +11,6 @@ custom_hooks = [dict(type='NumClassCheckHook')]
 
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
-load_from = 'mask_rcnn_swin_21.pth'
+load_from = 'mask_rcnn_swin_2.pth'
 resume_from = None
 workflow = [('train', 1)]

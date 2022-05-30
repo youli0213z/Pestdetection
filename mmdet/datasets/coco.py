@@ -35,7 +35,8 @@ class CocoDataset(CustomDataset):
                'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock',
                'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush')
         '''
-    CLASSES = ('228','25','6','485','673','222','401','392','402','235','115','398','480','8','310','105','387','394','110','41','430')
+    #CLASSES = ('228','25','6','485','673','222','401','392','402','235','115','398','480','8','310','105','387','394','110','41','430')
+    CLASSES = ("mask","no-mask")
     def load_annotations(self, ann_file):
         """Load annotation from COCO style annotation file.
 
